@@ -14,7 +14,6 @@ namespace Cake.Vault
 	///     Get vault secrets.
 	/// </summary>
 	[CakeAliasCategory("Configuration")]
-	[CakeNamespaceImport("Vault")]
 	public static class VaultAliases
 	{
 		/// <summary>
