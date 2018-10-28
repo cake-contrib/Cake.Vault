@@ -299,3 +299,7 @@ build.ps1
 # should be stored in the .pubxml.user file.
 
 # End of https://www.gitignore.io/api/visualstudio
+
+Examples/tools
+Examples/build.ps1
+Examples/config.json
