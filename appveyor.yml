@@ -7,7 +7,7 @@ build_script:
 
 environment:
   NUGET_API_KEY:
-    secure: 0QRcrLmvuSmZgWchRscyCm1btgQQVQPUhM5MWJ3CERMi60yZ2zMqbMx2tnkFqgT9
+    secure: M8kSq/XBFS6NriAu52f+ISNKzkmJVLjjOJw3P6+ShNaqnHcte4rAF4n5ijfFZ1Wa
 
 deploy_script:
   - bash scripts/deploy.sh src/Cake.Vault/Cake.Vault.csproj
@@ -15,5 +15,5 @@ deploy_script:
 artifacts:
   - path: '*.nupkg'
 
-after_build:
-  - ps: Get-ChildItem .\*.nupkg | % { Push-AppveyorArtifact $_.FullName -FileName $_.Name }
+after_deploy:
+  - ps: Get-ChildItem *.nupkg | % { Push-AppveyorArtifact $_.FullName -FileName $_.Name }
