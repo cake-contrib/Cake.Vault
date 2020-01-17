@@ -1,4 +1,4 @@
-#addin nuget:?package=Cake.Vault&version=0.0.1-alpha&prerelease&loaddependencies=true
+#addin nuget:?package=Cake.Vault&version=0.0.6-alpha&prerelease&loaddependencies=true
 
 var target = Argument("target", "Default");
 
